@@ -9,7 +9,7 @@ body {
 
 .container {
     background-color: white;
-    height: calc( 100vh - 20px );
+    height: calc( 60vh - 20px );
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px 30px 0 30px;
@@ -26,10 +26,59 @@ h2 {
     display:inline-flex;
     display: flex;
     border: 3px solid black;
+    width: 300px;
     /* flex-direction: column; */
 
     /*  Wrap **/
 }
+
+.flex-container-2 {
+    display:inline-flex;
+    display: flex;
+    border: 3px solid black;
+    width: 300px;
+    /* flex-direction: column; */
+
+    /*  Wrap **/
+    flex-wrap: wrap;
+}
+
+.flex-container-3 {
+    display:inline-flex;
+    display: flex;
+    border: 3px solid black;
+    width: 300px;
+    /* flex-direction: column; */
+
+    /*  Wrap **/
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container-4 {
+    display:inline-flex;
+    display: flex;
+    border: 3px solid black;
+    width: 300px;
+    /* flex-direction: column; */
+
+    /*  Wrap **/
+    /* flex-wrap: wrap-reverse; */
+    /* Flow */
+    /* Direction > wrap */
+    flex-flow: row wrap;
+}
+
+.flex-container-5 {
+    display:inline-flex;
+    display: flex;
+    border: 3px solid black;
+    width: 300px;
+    /* flex-direction: column; */
+
+    /*  Wrap **/
+    flex-flow: column wrap;
+}
+
 
 .flex-element {
     padding: 10px;
