@@ -34,11 +34,6 @@ h3 {
   margin-top: 1rem;
 }
 
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 .entry {
   margin-bottom: 2rem;
@@ -46,15 +41,21 @@ h3 {
 
 }
 
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .entry {
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 1 calc(50% - 1rem);
   }
 }
 
 @media (min-width: 768px) {
   .entry {
-    flex: 0 0 calc(33.3% - 1rem);
+    flex: 0 1 calc(33.3% - 1rem);
   }
 }
 
