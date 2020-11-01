@@ -125,15 +125,20 @@ aside a {
 
 .services {
     /* Flex here*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .services .service {
     /* Flex here*/
+    flex: 0 0 100%;
 }
 
 @media screen and (min-width:768px) {
     .services .service {
         /* Flex here*/
+        flex: 0 0 calc(33.3% - 1rem);
     }
 }
 
@@ -156,6 +161,9 @@ footer {
     background-color: #8E24AA;
     margin-top: 20px;
     /* Flex here*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
